@@ -25,10 +25,16 @@ fun minimumOf(number1: Long, number2: Long){
 
 
     if (number1 < number2) {
-        print("number2 is greater than b.  ")
+        print("number2 is greater than number 1.  ")
+
 
 }
+    if(number1 >= number2){
+        print("number1 is greater than number2")
+    }
 }
+
+
 fun rangeOf(number: Int){
     //TODO This function takes in a number and prints out the range that the number falls in.
     // The ranges are: (0 or below) (1 to 5), (6 to 10), (11 to 20), (21+)
