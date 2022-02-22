@@ -25,12 +25,12 @@ fun minimumOf(number1: Long, number2: Long){
 
 
     if (number1 < number2) {
-        print("number2 is greater than number 1.  ")
+        print("number2 is greater than number 1.  \n")
 
 
 }
     if(number1 >= number2){
-        print("number1 is greater than number2")
+        print("number1 is greater than number2  \n")
     }
 }
 
@@ -39,13 +39,32 @@ fun rangeOf(number: Int){
     //TODO This function takes in a number and prints out the range that the number falls in.
     // The ranges are: (0 or below) (1 to 5), (6 to 10), (11 to 20), (21+)
     // For example, if the number was 7, print out a message saying that the number 7 falls into the range 6 to 10.
-}
+
+    when(number){
+        in 0..-3 -> print(" the number" + number  + " doesnt fall of 0 or below ")
+        in 1..5 -> print("the number " + number + " falls into the range.\n ")
+       in 6..10 -> print("the number "+ number + " dosent fall into range")
+        in 11..20 -> print("the number " + number + " doesnt fall intro the range")
+
+}}
 
 fun inferredTypeOf(variable: Any){
     //TODO This function examines the inferred type of the variable passed as a parameter.
     // When the type is Int, print out that the data type of the variable is Int.
     //    Adopt the same approach for the following types: Long, Double, Float or Boolean.
     // When the data type is not Int, Long, Double, Float or Boolean, print that the data type is something else.
+    val intNum = 10
+    val booleanvar = true
+    val doublevar = 10.22
+    val floatvar = 100.45f
+    val longvar = 100L
+
+    println("" + intNum + "data is = \n"+ intNum.javaClass  )
+    println("" + booleanvar + "data is = \n"+ booleanvar.javaClass )
+    println("" + doublevar + "data is = \n"+ doublevar.javaClass )
+    println("" + floatvar + "data is = \n"+ floatvar.javaClass )
+    println("" + longvar + "data is = \n"+ longvar.javaClass )
+
 }
 
 fun stringContains(str : String){
@@ -55,4 +74,6 @@ fun stringContains(str : String){
     //    - contains the letter C, print the string and say it contains C.
     //    - is empty, inform the user that it is empty.
     //    - otherwise print the string and say it doesn't contain A, B or C.
+
+
 }
