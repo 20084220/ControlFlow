@@ -75,5 +75,12 @@ fun stringContains(str : String){
     //    - is empty, inform the user that it is empty.
     //    - otherwise print the string and say it doesn't contain A, B or C.
 
+    val a = " Contains A \n"
+    val b = " Contains B \n"
+    val c = " Contains C \n"
+    val d = " Container empty \n"
+    print("container A"+a +"container B" + b +"container C"+ c +"container D"+ d)
+
+
 
 }
